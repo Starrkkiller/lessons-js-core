@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Starkiller</title>
+    <meta name="description" content="Starkiller" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta property="og:image" content="https://wallpapercave.com/wp/wp9114992.jpg" />
+    <link rel="icon" href="https://wallpapercave.com/wp/wp9114992.jpg" />
+    <!--CSS-->
+    <link rel="stylesheet" href="./styles/specification.css">
+    <link rel="stylesheet" href="./styles/ui.css">
+    <link rel="stylesheet" href="./styles/media.css">
+  </head>
+  <body>
+    <section class="main">
+      <div class="heading">
+        <h1>Список заказов</h1>
+        <div class="button-theme">
+          <a href="#" class="button__theme_light">
+            <svg viewBox="0 0 16 16" fill="#8055FF" strok="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="8" cy="8" r="4" stroke="none"/>
+              <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none"/>
+              <path d="M1 9L0 8L1 7H3V9H1Z" stroke="none"/>
+              <path d="M7 15L8 16L9 15V13H7V15Z" stroke="none"/>
+              <path d="M7 1L8 0L9 1V3H7V1Z" stroke="none"/>
+              <path d="M12.5 14H14L14 12.5L12.5 11L11 12.5L12.5 14Z" stroke="none"/>
+              <path d="M2 3.5L2 2L3.5 2L5 3.5L3.5 5L2 3.5Z" stroke="none"/>
+              <path d="M3.5 14H2L2 12.5L3.5 11L5 12.5L3.5 14Z" stroke="none"/>
+              <path d="M14 3.5V2L12.5 2L11 3.5L12.5 5L14 3.5Z" stroke="none"/>
+            </svg>       
+            Светлая тема
+          </a>
+          <div class="header__theme-choice">
+            <span>
+              Выберите тему
+            </span>
+            <a href="#" class="button__theme_light button__theme_small">
+              <svg viewBox="0 0 16 16" fill="#8055FF" strok="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8" r="4" stroke="none"/>
+                <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none"/>
+                <path d="M1 9L0 8L1 7H3V9H1Z" stroke="none"/>
+                <path d="M7 15L8 16L9 15V13H7V15Z" stroke="none"/>
+                <path d="M7 1L8 0L9 1V3H7V1Z" stroke="none"/>
+                <path d="M12.5 14H14L14 12.5L12.5 11L11 12.5L12.5 14Z" stroke="none"/>
+                <path d="M2 3.5L2 2L3.5 2L5 3.5L3.5 5L2 3.5Z" stroke="none"/>
+                <path d="M3.5 14H2L2 12.5L3.5 11L5 12.5L3.5 14Z" stroke="none"/>
+                <path d="M14 3.5V2L12.5 2L11 3.5L12.5 5L14 3.5Z" stroke="none"/>
+              </svg>       
+              Светлая
+            </a>
+            <a href="#" class="button__theme_light button__theme_small">
+              <svg viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 15C12.0269 15 15.5 11.5021 15 7.5C14.7688 10.0468 12.6071 12 10 12C7.23858 12 5 9.76142 5 7C5 4.23858 7.23858 2 10 2C11 2 12 2.5 12 2.5C11 1.5 10 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z" stroke="none"/>
+              </svg>                      
+              Темная
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="dropdowns">
+        <div class="page">
+          <span>Номер страницы</span>
+          <input type="number" placeholder="Введите номер">
+        </div>
+        <div class="theme-choice">
+          <span>
+            Выберите тему
+          </span>
+          <a href="#" class="button__theme_light button__theme_small">
+            <svg viewBox="0 0 16 16" fill="#8055FF" strok="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="8" cy="8" r="4" stroke="none"/>
+              <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none"/>
+              <path d="M1 9L0 8L1 7H3V9H1Z" stroke="none"/>
+              <path d="M7 15L8 16L9 15V13H7V15Z" stroke="none"/>
+              <path d="M7 1L8 0L9 1V3H7V1Z" stroke="none"/>
+              <path d="M12.5 14H14L14 12.5L12.5 11L11 12.5L12.5 14Z" stroke="none"/>
+              <path d="M2 3.5L2 2L3.5 2L5 3.5L3.5 5L2 3.5Z" stroke="none"/>
+              <path d="M3.5 14H2L2 12.5L3.5 11L5 12.5L3.5 14Z" stroke="none"/>
+              <path d="M14 3.5V2L12.5 2L11 3.5L12.5 5L14 3.5Z" stroke="none"/>
+            </svg>       
+            Светлая
+          </a>
+          <a href="#" class="button__theme_light button__theme_small">
+            <svg viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 15C12.0269 15 15.5 11.5021 15 7.5C14.7688 10.0468 12.6071 12 10 12C7.23858 12 5 9.76142 5 7C5 4.23858 7.23858 2 10 2C11 2 12 2.5 12 2.5C11 1.5 10 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z" stroke="none"/>
+            </svg>                      
+            Темная
+          </a>
+        </div>
+        <div class="delete-choice">
+          <span>
+            Удалить n записей?
+          </span>
+          <a href="#" class="button__theme_light button__theme_small">     
+            Удалить
+          </a>
+          <a href="#" class="button__theme_light button__theme_small">                
+            Отмена
+          </a>
+        </div>
+        <div class="type">
+          <label>
+            <svg viewBox="0 0 16 16" fill="#fff" stroke="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+            </svg>
+            <input type="checkbox">
+            <span>Новый</span> 
+          </label>
+          <label>
+            <svg viewBox="0 0 16 16" fill="#fff" stroke="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+            </svg>
+            <input type="checkbox">
+            <span>Расчет</span> 
+          </label>
+          <label>
+            <svg viewBox="0 0 16 16" fill="#fff" stroke="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+            </svg>
+            <input type="checkbox">
+            <span>Подтвержден</span> 
+          </label>
+          <label>
+            <svg viewBox="0 0 16 16" fill="#fff" stroke="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+            </svg>
+            <input type="checkbox">
+            <span>Отложен</span> 
+          </label>
+          <label>
+            <svg viewBox="0 0 16 16" fill="#fff" stroke="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+            </svg>
+            <input type="checkbox">
+            <span>Выполнен</span> 
+          </label>
+          <label>
+            <svg viewBox="0 0 16 16" fill="#fff" stroke="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+            </svg>
+            <input type="checkbox">
+            <span>Отменен</span> 
+          </label>
+        </div>
+      </div>
+      <div class="dropdowns_circle">
+        <div class="type">
+          <label>
+            <input type="checkbox">
+            <span>Новый</span> 
+          </label>
+          <label>
+            <input type="checkbox">
+            <span>Расчет</span> 
+          </label>
+          <label>
+            <input type="checkbox">
+            <span>Подтвержден</span> 
+          </label>
+          <label>
+            <input type="checkbox">
+            <span>Отложен</span> 
+          </label>
+          <label>
+            <input type="checkbox">
+            <span>Выполнен</span> 
+          </label>
+          <label>
+            <input type="checkbox">
+            <span>Отменен</span> 
+          </label>
+        </div>
+      </div>
+      <div class="buttons_big">
+        <a href="#" class="button_long">
+          <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
+          </svg>  
+          text here        
+        </a>
+        <a href="#" class="button_medium">
+          text here        
+        </a>
+        <a href="#" class="button_short">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
+          </svg>        
+        </a>
+      </div>
+      <div class="buttons_small">
+        <a href="#" class="button_long">
+          <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
+          </svg>  
+          text here        
+        </a>
+        <a href="#" class="button_medium">
+          text here        
+        </a>
+        <a href="#" class="button_short">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
+          </svg>        
+        </a>
+      </div>
+      <div class="searchbar">
+        <input type="text" placeholder= "Номер заказа или ФИО" >
+      </div>
+      <div class="input">
+        <div class="input__parameters">
+          <span class="input__info">Дата и время заказа</span>
+          <input type="number" placeholder="Введите">
+        </div>
+        <div class="input__parameters input__parameters_locked">
+          <span class="input__info">Дата и время заказа</span>
+          <input type="number" placeholder="Введите">
+        </div>
+      </div>
+    </section>
+  <body>  
+</html>    
+<!-- Comment for pull -->

@@ -22,7 +22,7 @@
   position: relative;
 }
 
-.button__theme_light {
+.button {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -34,12 +34,12 @@
   height: 1.5rem;
 }
 
-.button__theme_light svg {
+.button svg {
   fill: #459DF5;
   transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
 }
 
-.button__theme_light:hover {
+.button:hover {
   color: #fff;
   background: #459DF5;
   border: 1px solid #459DF5;
@@ -47,12 +47,12 @@
   transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
 }
 
-.button__theme_light:hover svg {
+.button:hover svg {
   fill: #fff;
   transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
 }
 
-.header__theme-choice {
+.button-theme__theme-choice {
   background: #FFFFFF;
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0, 0.1);
   border-radius: calc(var(--index) * 1);
@@ -64,30 +64,30 @@
   display: none;
 }
 
-.button-theme:hover .header__theme-choice {
+.button-theme:hover .button-theme__theme-choice {
   display: block;
 }
 
-.button-theme:active .header__theme-choice {
+.button-theme:active .button-theme__theme-choice {
   display: block;
 }
 
-.header__theme-choice:hover {
+.button-theme__theme-choice:hover {
   display: block !important;
 }
 
-.header__theme-choice span {
+.button-theme__theme-choice span {
   display: block;
 }
 
-.button__theme_small {
+.button__theme_jc-center {
   width: 8rem;
   height: 1.5rem;
   justify-content: center;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
-.button__theme_small svg {
+.button__theme_jc-center svg {
   margin-right: calc(var(--index) * 0.17);
 }
 
@@ -131,7 +131,7 @@
   margin: 1rem 0;
 }
 
-.page input {
+.page__area {
   border: 1px solid #459DF5;
   width: 8rem;
   height: 2rem;
@@ -143,23 +143,23 @@
   transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
 } 
 
-.page input::-webkit-input-placeholder {
+.page__area::-webkit-input-placeholder {
   color: #BAD8F5;
 } 
 
-.page input::-webkit-input-placeholder:hover {
+.page__area::-webkit-input-placeholder:hover {
   color: #000;
 } 
 
-.page input::-moz-placeholder {
+.page__area::-moz-placeholder {
   color: #BAD8F5;
 }
 
-.page input::-webkit-input-placeholder:hover {
+.page__area::-webkit-input-placeholder:hover {
   color: #000;
 } 
 
-.page input:focus-visible {
+.page__area:focus-visible {
   outline: none;
   border: 1px solid #b12727;
   border-radius: 0.25rem;
@@ -376,7 +376,7 @@
   display: block;
 }
 
-.input__parameters input {
+.input__area {
   border: 1px solid #459DF5;
   width: 16rem;
   height: 2rem;
@@ -388,30 +388,30 @@
   transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
 } 
 
-.input__parameters input::-webkit-input-placeholder {
+.input__area::-webkit-input-placeholder {
   color: #BAD8F5;
 } 
 
-.input__parameters input::-webkit-input-placeholder:hover {
+.input__area::-webkit-input-placeholder:hover {
   color: #000;
 } 
 
-.input__parameters input::-moz-placeholder {
+.input__area::-moz-placeholder {
   color: #BAD8F5;
 }
 
-.input__parameters input::-webkit-input-placeholder:hover {
+.input__area::-webkit-input-placeholder:hover {
   color: #000;
 } 
 
-.input__parameters input:focus-visible {
+.input__area:focus-visible {
   outline: none;
   border: 1px solid #b12727;
   border-radius: 0.25rem;
   transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
 }
 
-.input__parameters input:visited {
+.input__area:visited {
   background: #459DF5;
 }
 

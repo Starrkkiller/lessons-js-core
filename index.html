@@ -17,20 +17,20 @@
       <div class="input">
         <div class="input__parameters">
           <span class="input__info">Дата и время заказа</span>
-          <input type="number" placeholder="Введите">
+          <input class="input__area" type="number" placeholder="Введите">
         </div>
         <div class="input__parameters input__parameters_locked">
           <span class="input__info">Дата и время заказа</span>
-          <input type="number" placeholder="Введите">
+          <input class="input__area" type="number" placeholder="Введите">
         </div>
       </div>
       <div class="searchbar">
-        <input type="text" placeholder= "Номер заказа или ФИО" >
+        <input class="input__info" type="text" placeholder= "Номер заказа или ФИО" >
       </div>
       <div class="heading">
         <h1>Список заказов</h1>
         <div class="button-theme">
-          <a href="#" class="button__theme_light">
+          <a href="#" class="button">
             <svg viewBox="0 0 16 16" fill="#8055FF" strok="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="8" cy="8" r="4" stroke="none"/>
               <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none"/>
@@ -44,11 +44,11 @@
             </svg>       
             Светлая тема
           </a>
-          <div class="header__theme-choice">
+          <div class="button-theme__theme-choice">
             <span>
               Выберите тему
             </span>
-            <a href="#" class="button__theme_light button__theme_small">
+            <a href="#" class="button button__theme_jc-center">
               <svg viewBox="0 0 16 16" fill="#8055FF" strok="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="8" cy="8" r="4" stroke="none"/>
                 <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none"/>
@@ -62,7 +62,7 @@
               </svg>       
               Светлая
             </a>
-            <a href="#" class="button__theme_light button__theme_small">
+            <a href="#" class="button button__theme_jc-center">
               <svg viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8 15C12.0269 15 15.5 11.5021 15 7.5C14.7688 10.0468 12.6071 12 10 12C7.23858 12 5 9.76142 5 7C5 4.23858 7.23858 2 10 2C11 2 12 2.5 12 2.5C11 1.5 10 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z" stroke="none"/>
               </svg>                      
@@ -74,13 +74,13 @@
       <div class="dropdowns">
         <div class="page">
           <span>Номер страницы</span>
-          <input type="number" placeholder="Введите номер">
+          <input class="page__area" type="number" placeholder="Введите номер">
         </div>
         <div class="theme-choice">
           <span>
             Выберите тему
           </span>
-          <a href="#" class="button__theme_light button__theme_small">
+          <a href="#" class="button button__theme_jc-center">
             <svg viewBox="0 0 16 16" fill="#8055FF" strok="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="8" cy="8" r="4" stroke="none"/>
               <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none"/>
@@ -94,7 +94,7 @@
             </svg>       
             Светлая
           </a>
-          <a href="#" class="button__theme_light button__theme_small">
+          <a href="#" class="button button__theme_jc-center">
             <svg viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 15C12.0269 15 15.5 11.5021 15 7.5C14.7688 10.0468 12.6071 12 10 12C7.23858 12 5 9.76142 5 7C5 4.23858 7.23858 2 10 2C11 2 12 2.5 12 2.5C11 1.5 10 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z" stroke="none"/>
             </svg>                      
@@ -105,10 +105,10 @@
           <span>
             Удалить n записей?
           </span>
-          <a href="#" class="button__theme_light button__theme_small">     
+          <a href="#" class="button button__theme_jc-center">     
             Удалить
           </a>
-          <a href="#" class="button__theme_light button__theme_small">                
+          <a href="#" class="button button__theme_jc-center">                
             Отмена
           </a>
         </div>

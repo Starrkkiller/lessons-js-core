@@ -1,23 +1,19 @@
 .main {
-  width: 80vh;
-  height: 100vw;
+  width: 80vw;
+  height: 100vh;
   margin: 0 auto;
 }
 
 .heading {
-  width: calc(var(--index) * 63.1);
-  max-width: 90%;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 2rem 0;
   position: relative;
 }
 
 .dropdowns, .buttons_big, .buttons_small, .dropdowns_circle {
-  width: calc(var(--index) * 63.1);
-  max-width: 90%;
   margin: 0 auto;
   position: relative;
 }
@@ -34,8 +30,8 @@
   background: #fff;
   border: 1px solid #fff;
   border-radius: calc(var(--index) * 0.5);
-  width: calc(var(--index) * 5.88);
-  height: calc(var(--index) * 1.3);
+  width: 8rem;
+  height: 1.5rem;
 }
 
 .button__theme_light svg {
@@ -85,8 +81,8 @@
 }
 
 .button__theme_small {
-  width: calc(var(--index) * 5.47);
-  height: calc(var(--index) * 1.1);
+  width: 8rem;
+  height: 1.5rem;
   justify-content: center;
   margin: 0 auto;
 }
@@ -218,6 +214,10 @@
   position: absolute;
 }
 
+.type label span {
+  font-size: 0.82rem;
+}
+
 .button_long, .button_medium, .button_short {
   display: flex;
   align-items: center;
@@ -227,18 +227,6 @@
 
 .button_long svg, .button_medium svg, .button_short svg {
   fill: #459DF5;
-  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
-}
-
-.button_long:hover, .button_medium:hover, .button_short:hover {
-  border: 1px solid #459DF5;
-  background: #459DF5;
-  color: #fff;
-  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
-}
-
-.button_long:hover svg, .button_medium:hover svg, .button_short:hover svg {
-  fill: #fff;
   transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
 }
 
@@ -288,6 +276,18 @@
   height: 1.5rem;
 }
 
+.button_long:hover, .button_medium:hover, .button_short:hover {
+  border: 1px solid #459DF5;
+  background: #459DF5;
+  color: #fff;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+}
+
+.button_long:hover svg, .button_medium:hover svg, .button_short:hover svg {
+  fill: #fff;
+  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+}
+
 .dropdowns_circle .type label input {
   appearance: none;
   display: block;
@@ -316,7 +316,7 @@
   display: block;
   width: 16rem;
   height: 2rem;
-  border: 1px solid #BAD8F5;
+  border: 1px solid #459DF5;
   background-color: #fff;
   border-radius: 0.5rem;
   margin-right: 0.5rem;

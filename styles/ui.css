@@ -83,7 +83,6 @@
   width: 8rem;
   height: 1.5rem;
   justify-content: center;
-  /* margin: 0 auto; */
 }
 
 .button__theme_jc-center svg {
@@ -399,7 +398,7 @@
   transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
 } 
 
-.input__area:disabled{
+.input__area:disabled {
   border-color: #BAD8F5;
 }
 

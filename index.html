@@ -19,17 +19,20 @@
           <span class="input__info">Дата и время заказа</span>
           <input class="input__area" type="number" placeholder="Введите">
         </div>
-        <div class="input__parameters input__parameters_locked">
+        <div class="input__parameters input__parameters_closing">
           <span class="input__info">Дата и время заказа</span>
           <input class="input__area" type="number" placeholder="Введите">
         </div>
         <div class="input__parameters input__parameters_locked">
           <span class="input__info">Дата и время заказа</span>
-          <input class="input__area  input__parameters_disabled" type="number" placeholder="Введите">
+          <input class="input__area  input__parameters_disabled" type="number" placeholder="12.12.2022">
         </div>
       </div>
       <div class="searchbar">
-        <input class="input__info" type="text" placeholder= "Номер заказа или ФИО" >
+        <input class="input__info" type="text" placeholder="Номер заказа или ФИО">
+      </div>
+      <div class="searchbar searchbar_typed">
+        <input class="input__info" type="text" placeholder="Номер заказа или ФИО">
       </div>
       <div class="heading">
         <h1>Список заказов</h1>
@@ -98,7 +101,7 @@
             </svg>       
             Светлая
           </a>
-          <a href="#" class="button button__theme_jc-center">
+          <a href="#" class="button button__theme_jc-center button__theme_colored">
             <svg viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 15C12.0269 15 15.5 11.5021 15 7.5C14.7688 10.0468 12.6071 12 10 12C7.23858 12 5 9.76142 5 7C5 4.23858 7.23858 2 10 2C11 2 12 2.5 12 2.5C11 1.5 10 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z" stroke="none"/>
             </svg>                      
@@ -112,7 +115,7 @@
           <a href="#" class="button button__theme_jc-center">     
             Удалить
           </a>
-          <a href="#" class="button button__theme_jc-center">                
+          <a href="#" class="button button__theme_jc-center button__theme_colored">                
             Отмена
           </a>
         </div>
@@ -121,70 +124,65 @@
             <svg viewBox="0 0 16 16" fill="#fff" stroke="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
             </svg>
-            <input type="checkbox">
+            <input type="checkbox" class="checkbox_square">
             <span>Новый</span> 
           </label>
           <label>
             <svg viewBox="0 0 16 16" fill="#fff" stroke="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
             </svg>
-            <input type="checkbox">
+            <input type="checkbox" class="checkbox_square">
             <span>Расчет</span> 
           </label>
           <label>
             <svg viewBox="0 0 16 16" fill="#fff" stroke="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
             </svg>
-            <input type="checkbox">
+            <input type="checkbox" class="checkbox_square">
             <span>Подтвержден</span> 
           </label>
           <label>
             <svg viewBox="0 0 16 16" fill="#fff" stroke="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
             </svg>
-            <input type="checkbox">
+            <input type="checkbox" class="checkbox_square">
             <span>Отложен</span> 
           </label>
           <label>
             <svg viewBox="0 0 16 16" fill="#fff" stroke="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
             </svg>
-            <input type="checkbox">
+            <input type="checkbox" class="checkbox_square">
             <span>Выполнен</span> 
           </label>
           <label>
             <svg viewBox="0 0 16 16" fill="#fff" stroke="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
             </svg>
-            <input type="checkbox">
+            <input type="checkbox" class="checkbox_square">
             <span>Отменен</span> 
           </label>
         </div>
+        <input type="checkbox" class="checkbox_circle">
       </div>
       <div class="dropdowns_circle">
         <div class="type">
           <label>
-            <input type="checkbox">
             <span>Новый</span> 
           </label>
           <label>
-            <input type="checkbox">
             <span>Расчет</span> 
           </label>
           <label>
-            <input type="checkbox">
             <span>Подтвержден</span> 
           </label>
           <label>
-            <input type="checkbox">
             <span>Отложен</span> 
           </label>
           <label>
-            <input type="checkbox">
             <span>Выполнен</span> 
           </label>
           <label>
-            <input type="checkbox">
             <span>Отменен</span> 
           </label>
         </div>

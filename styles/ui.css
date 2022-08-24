@@ -8,8 +8,8 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding: 2rem 0;
+  justify-content: space-evenly;
+  padding: 2rem 0 10rem;
   position: relative;
 }
 
@@ -58,9 +58,8 @@
   padding: 1rem;
   text-align: center;
   position: absolute;
-  top: 107%;
-  left: -15%;
-  display: none;
+  top: 115%;
+  left: -21%;
 }
 
 .button-theme:hover .button-theme__theme-choice {
@@ -87,6 +86,15 @@
 
 .button__theme_jc-center svg {
   margin-right: calc(var(--index) * 0.17);
+}
+
+.button__theme_colored {
+  background-color: #459DF5;
+  color: #fff;
+}
+
+.button__theme_colored svg {
+  fill: #fff;
 }
 
 .theme-choice {
@@ -164,7 +172,7 @@
 
 .page__area:focus-visible {
   outline: none;
-  border: 1px solid #b12727;
+  border: 1px solid #459DF5;
   border-radius: 0.25rem;
   transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
 }
@@ -172,7 +180,6 @@
 
 .type {
   margin: 2rem 0rem;
-  padding: 1rem 0 1rem 1rem;
   width: 10rem;
   height: 13rem;
   background: #FFFFFF;
@@ -184,7 +191,7 @@
   display: block;
 }
 
-.type label input {
+.checkbox_square {
   appearance: none;
   display: block;
   width: 1rem;
@@ -196,7 +203,7 @@
   transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
 }
 
-.type label input:checked {
+.checkbox_square:checked {
   background-color: #459DF5;
   border: 1px solid #459DF5;
   transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
@@ -205,12 +212,12 @@
 .type label {
   display: flex;
   align-items: center;
-  margin-bottom: 1rem;
+  padding: 0 0 1rem 1rem;
   position: relative;
 }
 
-.type label:last-child {
-  margin-bottom: 0;
+.type label:first-child {
+  padding-top: 1rem;
 }
 
 .type label svg {
@@ -292,7 +299,7 @@
   transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
 }
 
-.dropdowns_circle .type label input {
+.checkbox_circle {
   appearance: none;
   display: block;
   width: 1rem;
@@ -304,10 +311,14 @@
   transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
 }
 
-.dropdowns_circle .type label input:checked {
+.checkbox_circle:checked {
   background-color: #fff;
   border: 4px solid #459DF5;
   transition: all 0.1s ease;
+}
+
+.dropdowns_circle .type label:nth-child(3){
+  color: #459DF5;
 }
 
 .searchbar {
@@ -347,7 +358,7 @@
 
 .searchbar input:focus-visible {
   outline: none;
-  border: 1px solid #b12727;
+  border: 1px solid #459DF5;
   border-radius: 0.25rem;
   transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
 }
@@ -360,7 +371,11 @@
   cursor: pointer;
 }
 
-.searchbar::after {
+.searchbar_typed {
+  margin-top: 1rem;
+}
+
+.searchbar_typed::after {
   content: url(../images/svg/x-medium.svg);
   position: absolute;
   left: 90%;
@@ -374,6 +389,14 @@
   height: 4rem;
   margin: 1rem 0;
   position: relative;
+}
+
+.input__parameters_closing .input__area {
+  border-color: #b12727;
+}
+
+.input__parameters_closing .input__area:focus-visible {
+  border-color: #b12727;
 }
 
 .input__info {
@@ -420,7 +443,7 @@
 
 .input__area:focus-visible {
   outline: none;
-  border: 1px solid #b12727;
+  border: 1px solid #459DF5;
   border-radius: 0.25rem;
   transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
 }
@@ -446,10 +469,10 @@
 } 
 
 .input__parameters_disabled:focus-visible {
-  border-color: #BAD8F5;
+  border-color: #459DF5;
 }
 
-.input__parameters::after {
+.input__parameters_closing::after {
   content: url(../images/svg/x-medium.svg);
   position: absolute;
   left: 90%;

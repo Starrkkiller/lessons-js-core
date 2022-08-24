@@ -91,6 +91,7 @@
 .button__theme_colored {
   background-color: #459DF5;
   color: #fff;
+  border: 1px solid #459DF5;
 }
 
 .button__theme_colored svg {
@@ -209,6 +210,10 @@
   transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
 }
 
+.checkbox_square:checked + .checkbox__title {
+  color: #459DF5;
+}
+
 .type label {
   display: flex;
   align-items: center;
@@ -315,10 +320,6 @@
   background-color: #fff;
   border: 4px solid #459DF5;
   transition: all 0.1s ease;
-}
-
-.dropdowns_circle .type label:nth-child(3){
-  color: #459DF5;
 }
 
 .searchbar {
@@ -516,3 +517,26 @@
   transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
 }
 
+.dropdowns__radio {
+  opacity: 0;
+}
+
+.dropdowns__radio:checked + .dropdowns__radio-title {
+  color: #459DF5;
+}
+
+.dropdowns__radio-title {
+  color: #000;
+}
+
+.checkbox-example {
+  margin: 5rem 0; 
+}
+
+.checkbox-example__item:first-child {
+  margin-bottom: 3rem;
+}
+
+.checkbox-example__item .checkbox_square::after {
+  content: url(../images/svg/checkmark.svg);
+}

@@ -13,55 +13,130 @@
     <link rel="stylesheet" href="./styles/media.css">
   </head>
   <body>
-    <section class="main">
-      <div class="input">
-        <div class="input__parameters">
-          <span class="input__info">Дата и время заказа</span>
-          <input class="input__area" type="number" placeholder="Введите">
+    <div class="main-wrapper">
+      <section class="inputs">
+        <div class="inputs__wrapper">
+          <div class="input__parameters">
+            <span class="input__info">Дата и время заказа</span>
+            <input class="input__area" type="number" placeholder="Введите">
+          </div>
+          <div class="input__parameters input__parameters_closing">
+            <span class="input__info">Дата и время заказа</span>
+            <input class="input__area" type="number" placeholder="Введите">
+          </div>
+          <div class="input__parameters input__parameters_locked">
+            <span class="input__info">Дата и время заказа</span>
+            <input class="input__area  input__parameters_disabled" type="number" placeholder="12.12.2022">
+          </div>
+        </div>  
+      </section>
+      <section class="searchbars">
+        <div class="searchbars__wrapper">
+          <div class="searchbar">
+            <input class="input__info" type="text" placeholder="Номер заказа или ФИО">
+          </div>
+          <div class="searchbar searchbar_closing">
+            <input class="input__info" type="text" placeholder="Номер заказа или ФИО">
+          </div>
         </div>
-        <div class="input__parameters input__parameters_closing">
-          <span class="input__info">Дата и время заказа</span>
-          <input class="input__area" type="number" placeholder="Введите">
+      </section>
+      <section class="checkboxes">
+        <div class="checkboxes__wrapper">
+          <input type="checkbox" class="checkbox-example__item checkbox_circle">
+          <div class="checkbox-example__item">
+            <input type="checkbox" class="checkbox_square">
+          </div>
         </div>
-        <div class="input__parameters input__parameters_locked">
-          <span class="input__info">Дата и время заказа</span>
-          <input class="input__area  input__parameters_disabled" type="number" placeholder="12.12.2022">
-        </div>
-      </div>
-      <div class="searchbar">
-        <input class="input__info" type="text" placeholder="Номер заказа или ФИО">
-      </div>
-      <div class="searchbar searchbar_typed">
-        <input class="input__info" type="text" placeholder="Номер заказа или ФИО">
-      </div>
-      <div class="checkbox-example">
-        <input type="checkbox" class="checkbox-example__item checkbox_circle">
-        <div class="checkbox-example__item">
-          <input type="checkbox" class="checkbox_square">
-        </div>
-      </div>
-      <div class="heading">
-        <h1>Список заказов</h1>
-        <div class="button-theme">
-          <a href="#" class="button">
-            <svg viewBox="0 0 16 16" fill="#8055FF" strok="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="8" cy="8" r="4" stroke="none"/>
-              <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none"/>
-              <path d="M1 9L0 8L1 7H3V9H1Z" stroke="none"/>
-              <path d="M7 15L8 16L9 15V13H7V15Z" stroke="none"/>
-              <path d="M7 1L8 0L9 1V3H7V1Z" stroke="none"/>
-              <path d="M12.5 14H14L14 12.5L12.5 11L11 12.5L12.5 14Z" stroke="none"/>
-              <path d="M2 3.5L2 2L3.5 2L5 3.5L3.5 5L2 3.5Z" stroke="none"/>
-              <path d="M3.5 14H2L2 12.5L3.5 11L5 12.5L3.5 14Z" stroke="none"/>
-              <path d="M14 3.5V2L12.5 2L11 3.5L12.5 5L14 3.5Z" stroke="none"/>
-            </svg>       
-            Светлая тема
-          </a>
-          <div class="button-theme__theme-choice">
-            <span>
-              Выберите тему
-            </span>
-            <a href="#" class="button button__theme_jc-center">
+      </section>
+      <section class="buttons">
+        <div class="buttons__wrapper">
+          <div class="buttons buttons_big">
+            <a href="#" class="button button_long">
+              <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
+              </svg>  
+              text here        
+            </a>
+            <a href="#" class="button button_medium">
+              text here        
+            </a>
+            <a href="#" class="button button_short">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
+              </svg>        
+            </a>
+          </div>
+          <div class="buttons buttons_small">
+            <a href="#" class="button button_long">
+              <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
+              </svg>  
+              text here        
+            </a>
+            <a href="#" class="button button_medium">
+              text here        
+            </a>
+            <a href="#" class="button button_short">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
+              </svg>        
+            </a>
+          </div>
+          <div class="buttons buttons_big">
+            <a href="#" class="button button_long button_black">
+              <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
+              </svg>  
+              text here        
+            </a>
+            <a href="#" class="button button_medium button_black">
+              text here        
+            </a>
+            <a href="#" class="button button_short button_black">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
+              </svg>        
+            </a>
+          </div>
+          <div class="buttons buttons_big">
+            <a href="#" class="button_long  button_colored">
+              <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
+              </svg>  
+              text here        
+            </a>
+            <a href="#" class="button button_medium button_colored">
+              text here        
+            </a>
+            <a href="#" class="button button_short button_colored">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
+              </svg>        
+            </a>
+          </div>
+          <div class="buttons buttons_small">
+            <a href="#" class="button button_long button_colored">
+              <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
+              </svg>  
+              text here        
+            </a>
+            <a href="#" class="button button_medium button_colored">
+              text here        
+            </a>
+            <a href="#" class="button button_short button_colored">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
+              </svg>        
+            </a>
+          </div>
+        </div>  
+      </section>    
+      <section class="heading">
+        <div class="heading__wrapper">
+          <h1>Список заказов</h1>
+          <div class="themes">
+            <a href="#" class="button">
               <svg viewBox="0 0 16 16" fill="#8055FF" strok="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="8" cy="8" r="4" stroke="none"/>
                 <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none"/>
@@ -73,17 +148,36 @@
                 <path d="M3.5 14H2L2 12.5L3.5 11L5 12.5L3.5 14Z" stroke="none"/>
                 <path d="M14 3.5V2L12.5 2L11 3.5L12.5 5L14 3.5Z" stroke="none"/>
               </svg>       
-              Светлая
+              Светлая тема
             </a>
-            <a href="#" class="button button__theme_jc-center button__theme_colored">
-              <svg viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 15C12.0269 15 15.5 11.5021 15 7.5C14.7688 10.0468 12.6071 12 10 12C7.23858 12 5 9.76142 5 7C5 4.23858 7.23858 2 10 2C11 2 12 2.5 12 2.5C11 1.5 10 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z" stroke="none"/>
-              </svg>                      
-              Темная
-            </a>
+            <div class="button-theme__theme-choice">
+              <span>
+                Выберите тему
+              </span>
+              <a href="#" class="button button__theme_jc-center">
+                <svg viewBox="0 0 16 16" fill="#8055FF" strok="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="8" cy="8" r="4" stroke="none"/>
+                  <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none"/>
+                  <path d="M1 9L0 8L1 7H3V9H1Z" stroke="none"/>
+                  <path d="M7 15L8 16L9 15V13H7V15Z" stroke="none"/>
+                  <path d="M7 1L8 0L9 1V3H7V1Z" stroke="none"/>
+                  <path d="M12.5 14H14L14 12.5L12.5 11L11 12.5L12.5 14Z" stroke="none"/>
+                  <path d="M2 3.5L2 2L3.5 2L5 3.5L3.5 5L2 3.5Z" stroke="none"/>
+                  <path d="M3.5 14H2L2 12.5L3.5 11L5 12.5L3.5 14Z" stroke="none"/>
+                  <path d="M14 3.5V2L12.5 2L11 3.5L12.5 5L14 3.5Z" stroke="none"/>
+                </svg>       
+                Светлая
+              </a>
+              <a href="#" class="button button__theme_jc-center button__theme_colored">
+                <svg viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 15C12.0269 15 15.5 11.5021 15 7.5C14.7688 10.0468 12.6071 12 10 12C7.23858 12 5 9.76142 5 7C5 4.23858 7.23858 2 10 2C11 2 12 2.5 12 2.5C11 1.5 10 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z" stroke="none"/>
+                </svg>                      
+                Темная
+              </a>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
       <div class="dropdowns">
         <div class="page">
           <span>Номер страницы</span>
@@ -169,117 +263,36 @@
             <span class="checkbox__title">Отменен</span> 
           </label>
         </div>
-      
-      </div>
-      <div class="dropdowns dropdowns_circle">
-        <div class="type">
-          <label>
-            <input type="checkbox" placeholder="Выполнен" class="dropdowns__radio">
-            <span class="dropdowns__radio-title">Новый</span> 
-          </label>
-          <label>
-            <input type="checkbox" placeholder="Выполнен" class="dropdowns__radio">
-            <span class="dropdowns__radio-title">Расчет</span> 
-          </label>
-          <label>
-            <input type="checkbox" placeholder="Выполнен" class="dropdowns__radio">
-            <span class="dropdowns__radio-title">Подтвержден</span> 
-          </label>
-          <label>
-            <input type="checkbox" placeholder="Выполнен" class="dropdowns__radio">
-            <span class="dropdowns__radio-title">Отложен</span> 
-          </label>
-          <label>
-            <input type="checkbox" placeholder="Выполнен" class="dropdowns__radio">
-            <span class="dropdowns__radio-title">Выполнен</span> 
-          </label>
-          <label>
-            <input type="checkbox" placeholder="Выполнен" class="dropdowns__radio">
-            <span class="dropdowns__radio-title">Отменен</span> 
-          </label>
+        <div class="dropdowns dropdowns_circle">
+          <div class="type">
+            <label>
+              <input type="checkbox" placeholder="Выполнен" class="dropdowns__radio">
+              <span class="dropdowns__radio-title">Новый</span> 
+            </label>
+            <label>
+              <input type="checkbox" placeholder="Выполнен" class="dropdowns__radio">
+              <span class="dropdowns__radio-title">Расчет</span> 
+            </label>
+            <label>
+              <input type="checkbox" placeholder="Выполнен" class="dropdowns__radio">
+              <span class="dropdowns__radio-title">Подтвержден</span> 
+            </label>
+            <label>
+              <input type="checkbox" placeholder="Выполнен" class="dropdowns__radio">
+              <span class="dropdowns__radio-title">Отложен</span> 
+            </label>
+            <label>
+              <input type="checkbox" placeholder="Выполнен" class="dropdowns__radio">
+              <span class="dropdowns__radio-title">Выполнен</span> 
+            </label>
+            <label>
+              <input type="checkbox" placeholder="Выполнен" class="dropdowns__radio">
+              <span class="dropdowns__radio-title">Отменен</span> 
+            </label>
+          </div>
         </div>
       </div>
-      <div class="buttons buttons_big">
-        <a href="#" class="button_long">
-          <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
-          </svg>  
-          text here        
-        </a>
-        <a href="#" class="button_medium">
-          text here        
-        </a>
-        <a href="#" class="button_short">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
-          </svg>        
-        </a>
-      </div>
-      <div class="buttons buttons_small">
-        <a href="#" class="button_long">
-          <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
-          </svg>  
-          text here        
-        </a>
-        <a href="#" class="button_medium">
-          text here        
-        </a>
-        <a href="#" class="button_short">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
-          </svg>        
-        </a>
-      </div>
-      <div class="buttons buttons_big">
-        <a href="#" class="button_long button_black">
-          <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
-          </svg>  
-          text here        
-        </a>
-        <a href="#" class="button_medium button_black">
-          text here        
-        </a>
-        <a href="#" class="button_short button_black">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
-          </svg>        
-        </a>
-      </div>
-      <div class="buttons buttons_big">
-        <a href="#" class="button_long  button_colored">
-          <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
-          </svg>  
-          text here        
-        </a>
-        <a href="#" class="button_medium button_colored">
-          text here        
-        </a>
-        <a href="#" class="button_short button_colored">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
-          </svg>        
-        </a>
-      </div>
-      <div class="buttons buttons_small">
-        <a href="#" class="button_long button_colored">
-          <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
-          </svg>  
-          text here        
-        </a>
-        <a href="#" class="button_medium button_colored">
-          text here        
-        </a>
-        <a href="#" class="button_short button_colored">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
-          </svg>        
-        </a>
-      </div>
-    </section>
+    </div>
   <body>  
 </html>    
 <!-- Comment for pull -->

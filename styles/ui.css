@@ -1,10 +1,10 @@
-.main {
-  width: 80vw;
+.main-wrapper {
+  width: 90vw;
   height: 100vh;
   margin: 0 auto;
 }
 
-.heading {
+.heading__wrapper {
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -13,12 +13,17 @@
   position: relative;
 }
 
+.checkboxes__wrapper {
+  padding: 3rem 0 0;
+  display: flex;
+}
+
 .dropdowns, .buttons_big, .buttons_small, .dropdowns_circle {
   margin: 0 auto;
   position: relative;
 }
 
-.button-theme {
+.themes {
   position: relative;
 }
 
@@ -62,11 +67,11 @@
   left: -21%;
 }
 
-.button-theme:hover .button-theme__theme-choice {
+.themes:hover .button-theme__theme-choice {
   display: block;
 }
 
-.button-theme:active .button-theme__theme-choice {
+.themes:active .button-theme__theme-choice {
   display: block;
 }
 
@@ -372,11 +377,11 @@
   cursor: pointer;
 }
 
-.searchbar_typed {
+.searchbar_closing {
   margin-top: 1rem;
 }
 
-.searchbar_typed::after {
+.searchbar_closing::after {
   content: url(../images/svg/x-medium.svg);
   position: absolute;
   left: 90%;

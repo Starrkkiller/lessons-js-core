@@ -17,32 +17,58 @@
       <section class="inputs">
         <div class="inputs__wrapper">
           <div class="input__parameters">
-            <span class="input__info">Дата и время заказа</span>
-            <input class="input__area" type="number" placeholder="Введите">
+            <label class="input__info">
+              Дата и время заказа
+              <input class="input__area" type="number" placeholder="Введите">
+            </label>
           </div>
           <div class="input__parameters input__parameters_closing">
-            <span class="input__info">Дата и время заказа</span>
-            <input class="input__area" type="number" placeholder="Введите">
+            <label class="input__info">
+              Дата и время заказа
+              <input class="input__area" type="number" placeholder="Введите">
+              <button class="input__btn">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5" stroke="#BAD8F5"/>
+                </svg>                  
+              </button>
+            </label> 
           </div>
           <div class="input__parameters input__parameters_locked">
-            <span class="input__info">Дата и время заказа</span>
-            <input class="input__area  input__parameters_disabled" type="number" placeholder="12.12.2022">
+            <label class="input__info">
+              Дата и время заказа
+              <input class="input__area  input__parameters_disabled" type="number" placeholder="12.12.2022">
+            </label>  
           </div>
         </div>  
       </section>
       <section class="searchbars">
         <div class="searchbars__wrapper">
           <div class="searchbar">
-            <input class="input__info" type="text" placeholder="Номер заказа или ФИО">
+            <button class="searchbar__btn">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.0355 10.0355C11.9882 8.08291 11.9882 4.91709 10.0355 2.96447C8.08291 1.01184 4.91709 1.01184 2.96447 2.96447C1.01184 4.91709 1.01184 8.08291 2.96447 10.0355C4.91709 11.9882 8.08291 11.9882 10.0355 10.0355ZM10.0355 10.0355L14 14M14 14L14.5 13.5L11.5 10.5M14 14L13.5 14.5L10.5 11.5" stroke="#459DF5"/>
+              </svg>                
+            </button>
+            <input class="searchbar__info" type="text" placeholder="Номер заказа или ФИО">
           </div>
           <div class="searchbar searchbar_closing">
-            <input class="input__info" type="text" placeholder="Номер заказа или ФИО">
+            <button class="searchbar__btn">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.0355 10.0355C11.9882 8.08291 11.9882 4.91709 10.0355 2.96447C8.08291 1.01184 4.91709 1.01184 2.96447 2.96447C1.01184 4.91709 1.01184 8.08291 2.96447 10.0355C4.91709 11.9882 8.08291 11.9882 10.0355 10.0355ZM10.0355 10.0355L14 14M14 14L14.5 13.5L11.5 10.5M14 14L13.5 14.5L10.5 11.5" stroke="#459DF5"/>
+              </svg>                
+            </button>
+            <input class="searchbar__info" type="text" placeholder="Номер заказа или ФИО">
+            <button class="input__btn input__btn_for-search">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5" stroke="#BAD8F5"/>
+              </svg>                  
+            </button>
           </div>
         </div>
       </section>
       <section class="checkboxes">
         <div class="checkboxes__wrapper">
-          <input type="checkbox" class="checkbox-example__item checkbox_circle">
+          <input type="radio" class="checkbox-example__item checkbox_circle">
           <div class="checkbox-example__item">
             <input type="checkbox" class="checkbox_square">
           </div>
@@ -51,84 +77,84 @@
       <section class="buttons">
         <div class="buttons__wrapper">
           <div class="buttons buttons_big">
-            <a href="#" class="button button_long">
+            <button class="button button_long">
               <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
               </svg>  
               text here        
-            </a>
-            <a href="#" class="button button_medium">
+            </button>
+            <button class="button button_medium">
               text here        
-            </a>
-            <a href="#" class="button button_short">
+            </button>
+            <button class="button button_short">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
               </svg>        
-            </a>
+            </button>
           </div>
           <div class="buttons buttons_small">
-            <a href="#" class="button button_long">
+            <button class="button button_long button_long-smaller">
               <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
               </svg>  
               text here        
-            </a>
-            <a href="#" class="button button_medium">
+            </button>
+            <button class="button button_medium button_medium-smaller">
               text here        
-            </a>
-            <a href="#" class="button button_short">
+            </button>
+            <button class="button button_short button_short-smaller">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
               </svg>        
-            </a>
+            </button>
           </div>
           <div class="buttons buttons_big">
-            <a href="#" class="button button_long button_black">
+            <button class="button button_long button_black">
               <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
               </svg>  
               text here        
-            </a>
-            <a href="#" class="button button_medium button_black">
+            </button>
+            <button class="button button_medium button_black">
               text here        
-            </a>
-            <a href="#" class="button button_short button_black">
+            </button>
+            <button class="button button_short button_black">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
               </svg>        
-            </a>
+            </button>
           </div>
           <div class="buttons buttons_big">
-            <a href="#" class="button_long  button_colored">
+            <button class="button_long  button_colored">
               <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
               </svg>  
               text here        
-            </a>
-            <a href="#" class="button button_medium button_colored">
+            </button>
+            <button class="button button_medium button_colored">
               text here        
-            </a>
-            <a href="#" class="button button_short button_colored">
+            </button>
+            <button class="button button_short button_colored">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
               </svg>        
-            </a>
+            </button>
           </div>
           <div class="buttons buttons_small">
-            <a href="#" class="button button_long button_colored">
+            <button class="button button_long button_colored button_long-smaller">
               <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
               </svg>  
               text here        
-            </a>
-            <a href="#" class="button button_medium button_colored">
+            </button>
+            <button class="button button_medium button_colored button_medium-smaller">
               text here        
-            </a>
-            <a href="#" class="button button_short button_colored">
+            </button>
+            <button class="button button_short button_colored button_short-smaller">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0L0 0L0 4H4V8H0L0 12H4V16H8V12H12V16H16V12H12V8H16V4H12V0L8 0V4H4V0ZM8 8H12V4H8V8ZM8 8H4V12H8V8Z"/>
               </svg>        
-            </a>
+            </button>
           </div>
         </div>  
       </section>    
@@ -136,7 +162,7 @@
         <div class="heading__wrapper">
           <h1>Список заказов</h1>
           <div class="themes">
-            <a href="#" class="button">
+            <button class="button">
               <svg viewBox="0 0 16 16" fill="#8055FF" strok="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="8" cy="8" r="4" stroke="none"/>
                 <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none"/>
@@ -149,12 +175,12 @@
                 <path d="M14 3.5V2L12.5 2L11 3.5L12.5 5L14 3.5Z" stroke="none"/>
               </svg>       
               Светлая тема
-            </a>
+            </button>
             <div class="button-theme__theme-choice">
-              <span>
+              <p class="button-theme__title">
                 Выберите тему
-              </span>
-              <a href="#" class="button button__theme_jc-center">
+              </p>
+              <button class="button button__theme_position">
                 <svg viewBox="0 0 16 16" fill="#8055FF" strok="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="8" cy="8" r="4" stroke="none"/>
                   <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none"/>
@@ -167,27 +193,29 @@
                   <path d="M14 3.5V2L12.5 2L11 3.5L12.5 5L14 3.5Z" stroke="none"/>
                 </svg>       
                 Светлая
-              </a>
-              <a href="#" class="button button__theme_jc-center button__theme_colored">
+              </button>
+              <button class="button button__theme_position button__theme_colored">
                 <svg viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8 15C12.0269 15 15.5 11.5021 15 7.5C14.7688 10.0468 12.6071 12 10 12C7.23858 12 5 9.76142 5 7C5 4.23858 7.23858 2 10 2C11 2 12 2.5 12 2.5C11 1.5 10 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z" stroke="none"/>
                 </svg>                      
                 Темная
-              </a>
+              </button>
             </div>
           </div>
         </div>
       </section>
-      <div class="dropdowns">
+      <section class="dropdowns">
         <div class="page">
-          <span>Номер страницы</span>
-          <input class="page__area" type="number" placeholder="Введите номер">
+          <label>
+          <p class="page__info">Номер страницы</p>
+            <input class="page__area" type="number" placeholder="Введите номер">
+          </label>
         </div>
         <div class="theme-choice">
-          <span>
+          <p class="theme-choice__title">
             Выберите тему
-          </span>
-          <a href="#" class="button button__theme_jc-center">
+          </p>
+          <button class="button button__theme_position">
             <svg viewBox="0 0 16 16" fill="#8055FF" strok="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="8" cy="8" r="4" stroke="none"/>
               <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none"/>
@@ -200,98 +228,98 @@
               <path d="M14 3.5V2L12.5 2L11 3.5L12.5 5L14 3.5Z" stroke="none"/>
             </svg>       
             Светлая
-          </a>
-          <a href="#" class="button button__theme_jc-center button__theme_colored">
+          </button>
+          <button class="button button__theme_position button__theme_colored">
             <svg viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8 15C12.0269 15 15.5 11.5021 15 7.5C14.7688 10.0468 12.6071 12 10 12C7.23858 12 5 9.76142 5 7C5 4.23858 7.23858 2 10 2C11 2 12 2.5 12 2.5C11 1.5 10 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z" stroke="none"/>
             </svg>                      
             Темная
-          </a>
+          </button>
         </div>
         <div class="delete-choice">
-          <span>
+          <p class="delete-choice__title">
             Удалить n записей?
-          </span>
-          <a href="#" class="button button__theme_jc-center">     
+          </p>
+          <button href="#" class="button button__theme_position">     
             Удалить
-          </a>
-          <a href="#" class="button button__theme_jc-center button__theme_colored">                
+          </button>
+          <button href="#" class="button button__theme_position button__theme_colored">                
             Отмена
-          </a>
+          </button>
         </div>
         <div class="type">
-          <label>
+          <label class="type__item">
             <svg viewBox="0 0 16 16" fill="#fff" stroke="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
             </svg>
             <input type="checkbox" class="checkbox_square">
-            <span class="checkbox__title">Новый</span> 
+            <p class="checkbox__title">Новый</p> 
           </label>
-          <label>
+          <label class="type__item">
             <svg viewBox="0 0 16 16" fill="#fff" stroke="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
             </svg>
             <input type="checkbox" class="checkbox_square">
-            <span class="checkbox__title">Расчет</span> 
+            <p class="checkbox__title">Расчет</p> 
           </label>
-          <label>
+          <label class="type__item">
             <svg viewBox="0 0 16 16" fill="#fff" stroke="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
             </svg>
             <input type="checkbox" class="checkbox_square">
-            <span class="checkbox__title">Подтвержден</span> 
+            <p class="checkbox__title">Подтвержден</p> 
           </label>
-          <label>
+          <label class="type__item">
             <svg viewBox="0 0 16 16" fill="#fff" stroke="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
             </svg>
             <input type="checkbox" class="checkbox_square">
-            <span class="checkbox__title">Отложен</span> 
+            <p class="checkbox__title">Отложен</p> 
           </label>
-          <label>
+          <label class="type__item">
             <svg viewBox="0 0 16 16" fill="#fff" stroke="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
             </svg>
             <input type="checkbox" class="checkbox_square">
-            <span class="checkbox__title">Выполнен</span> 
+            <p class="checkbox__title">Выполнен</p> 
           </label>
-          <label>
+          <label class="type__item">
             <svg viewBox="0 0 16 16" fill="#fff" stroke="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
             </svg>
             <input type="checkbox" class="checkbox_square">
-            <span class="checkbox__title">Отменен</span> 
+            <p class="checkbox__title">Отменен</p> 
           </label>
         </div>
         <div class="dropdowns dropdowns_circle">
           <div class="type">
-            <label>
-              <input type="checkbox" placeholder="Выполнен" class="dropdowns__radio">
-              <span class="dropdowns__radio-title">Новый</span> 
+            <label class="type__item">
+              <input type="radio" name="radio" class="dropdowns__radio">
+              <p class="dropdowns__radio-title">Новый</p> 
             </label>
-            <label>
-              <input type="checkbox" placeholder="Выполнен" class="dropdowns__radio">
-              <span class="dropdowns__radio-title">Расчет</span> 
+            <label class="type__item">
+              <input type="radio" name="radio" class="dropdowns__radio">
+              <p class="dropdowns__radio-title">Расчет</p> 
             </label>
-            <label>
-              <input type="checkbox" placeholder="Выполнен" class="dropdowns__radio">
-              <span class="dropdowns__radio-title">Подтвержден</span> 
+            <label class="type__item">
+              <input type="radio" name="radio" class="dropdowns__radio">
+              <p class="dropdowns__radio-title">Подтвержден</p> 
             </label>
-            <label>
-              <input type="checkbox" placeholder="Выполнен" class="dropdowns__radio">
-              <span class="dropdowns__radio-title">Отложен</span> 
+            <label class="type__item">
+              <input type="radio" name="radio" class="dropdowns__radio">
+              <p class="dropdowns__radio-title">Отложен</p> 
             </label>
-            <label>
-              <input type="checkbox" placeholder="Выполнен" class="dropdowns__radio">
-              <span class="dropdowns__radio-title">Выполнен</span> 
+            <label class="type__item">
+              <input type="radio" name="radio" class="dropdowns__radio">
+              <p class="dropdowns__radio-title">Выполнен</p> 
             </label>
-            <label>
-              <input type="checkbox" placeholder="Выполнен" class="dropdowns__radio">
-              <span class="dropdowns__radio-title">Отменен</span> 
+            <label class="type__item">
+              <input type="radio" name="radio" class="dropdowns__radio">
+              <p class="dropdowns__radio-title">Отменен</p> 
             </label>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   <body>  
 </html>    

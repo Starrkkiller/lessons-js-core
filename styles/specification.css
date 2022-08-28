@@ -44,6 +44,12 @@ table {
 	border-spacing: 0;
 }
 
+button {
+	border: none;
+	background: transparent;
+	cursor: pointer;
+}
+
 /* ------------Specification--------------*/
 
 * {

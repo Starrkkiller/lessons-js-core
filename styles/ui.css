@@ -18,7 +18,7 @@
   display: flex;
 }
 
-.dropdowns, .buttons_big, .buttons_small, .dropdowns_circle {
+.dropdowns, .dropdowns_circle {
   margin: 0 auto;
   position: relative;
 }
@@ -79,17 +79,24 @@
   display: block !important;
 }
 
-.button-theme__theme-choice span {
+.button-theme__title, .delete-choice__title, .theme-choice__title {
   display: block;
+  text-align: left;
+  margin-bottom: 0.5rem;
 }
 
-.button__theme_jc-center {
+.button__theme_position {
   width: 8rem;
   height: 1.5rem;
   justify-content: center;
+  margin-bottom: 0.5rem;
 }
 
-.button__theme_jc-center svg {
+.button__theme_position:last-child {
+  margin-bottom: 0;
+}
+
+.button__theme_position svg {
   margin-right: calc(var(--index) * 0.17);
 }
 
@@ -143,6 +150,10 @@
   margin: 1rem 0;
 }
 
+.page__info {
+  text-align: left;
+}
+
 .page__area {
   border: 1px solid #459DF5;
   width: 8rem;
@@ -191,9 +202,10 @@
   background: #FFFFFF;
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
+  padding: 0.5rem 0;
 }
 
-.type span {
+.checkbox__title {
   display: block;
 }
 
@@ -219,22 +231,23 @@
   color: #459DF5;
 }
 
-.type label {
+
+.type__item {
   display: flex;
   align-items: center;
-  padding: 0 0 1rem 1rem;
+  padding: 0.5rem 0 0.5rem 1rem;
   position: relative;
 }
 
-.type label:first-child {
-  padding-top: 1rem;
+.type__item:first-child {
+  padding-top: 0.5rem;
 }
 
-.type label svg {
+.type__item svg {
   position: absolute;
 }
 
-.type label span {
+.checkbox__title {
   font-size: 0.82rem;
 }
 
@@ -274,7 +287,7 @@
   border-radius: 0.25rem;
 }
 
-.buttons_small .button_long {
+.button_long-smaller{
   width: 5.75rem;
   height: 1.5rem;
   border-radius: 0.25rem;
@@ -285,14 +298,14 @@
   margin-right: 0.5rem;
 }
 
-.buttons_small .button_medium {
+.button_medium-smaller {
   width: 4.5rem;
   height: 1.5rem;
   color: #459DF5;
   border-radius: 0.25rem;
 }
 
-.buttons_small .button_short {
+.button_short-smaller {
   width: 1.5rem;
   height: 1.5rem;
 }
@@ -346,31 +359,30 @@
   padding-left: 2rem;
 }
 
-.searchbar input::-webkit-input-placeholder {
+.searchbar__info::-webkit-input-placeholder {
   color: #BAD8F5;
 } 
 
-.searchbar input::-webkit-input-placeholder:hover {
+.searchbar__info::-webkit-input-placeholder:hover {
   color: #000;
 } 
 
-.searchbar input::-moz-placeholder {
+.searchbar__info::-moz-placeholder {
   color: #BAD8F5;
 }
 
-.searchbar input::-webkit-input-placeholder:hover {
+.searchbar__info::-webkit-input-placeholder:hover {
   color: #000;
 } 
 
-.searchbar input:focus-visible {
+.searchbar__info:focus-visible {
   outline: none;
   border: 1px solid #459DF5;
   border-radius: 0.25rem;
   transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
 }
 
-.searchbar::before {
-  content: url(../images/svg/searching.svg);
+.searchbar__btn {
   position: absolute;
   left: 4%;
   top: 23%;
@@ -381,12 +393,13 @@
   margin-top: 1rem;
 }
 
-.searchbar_closing::after {
-  content: url(../images/svg/x-medium.svg);
+.input__btn_for-search {
   position: absolute;
   left: 90%;
-  top: 23%;
+  top: 25%;
   cursor: pointer;
+  width: 1rem;
+  height: 1rem;
 }
 
 .input__parameters {
@@ -398,11 +411,11 @@
 }
 
 .input__parameters_closing .input__area {
-  border-color: #b12727;
+  border-color: #F53152;
 }
 
 .input__parameters_closing .input__area:focus-visible {
-  border-color: #b12727;
+  border-color: #F53152;
 }
 
 .input__info {
@@ -478,8 +491,8 @@
   border-color: #459DF5;
 }
 
-.input__parameters_closing::after {
-  content: url(../images/svg/x-medium.svg);
+.input__btn {
+  background: url(../images/svg/x-medium.svg);
   position: absolute;
   left: 90%;
   top: 49%;
@@ -523,7 +536,7 @@
 }
 
 .dropdowns__radio {
-  opacity: 0;
+  appearance: none;
 }
 
 .dropdowns__radio:checked + .dropdowns__radio-title {
@@ -544,4 +557,13 @@
 
 .checkbox-example__item .checkbox_square::after {
   content: url(../images/svg/checkmark.svg);
+}
+
+.input__btn_for-search {
+  position: absolute;
+  left: 90%;
+  top: 25%;
+  cursor: pointer;
+  width: 1rem;
+  height: 1rem;
 }

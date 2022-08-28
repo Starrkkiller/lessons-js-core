@@ -9,7 +9,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "prettier": "prettier --write ."
+    "lint-staged": "lint-staged"
   },
   "repository": {
     "type": "git",

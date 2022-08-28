@@ -18,7 +18,10 @@
   display: flex;
 }
 
-.dropdowns, .buttons_big, .buttons_small, .dropdowns_circle {
+.dropdowns,
+.buttons_big,
+.buttons_small,
+.dropdowns_circle {
   margin: 0 auto;
   position: relative;
 }
@@ -31,7 +34,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  color: #459DF5;
+  color: #459df5;
   background: #fff;
   border: 1px solid #fff;
   border-radius: 0.25rem;
@@ -40,25 +43,26 @@
 }
 
 .button svg {
-  fill: #459DF5;
-  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+  fill: #459df5;
+  transition: all 1000ms cubic-bezier(0.075, 1, 0.25, 1);
 }
 
 .button:hover {
   color: #fff;
-  background: #459DF5;
-  border: 1px solid #459DF5;
-  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+  background: #459df5;
+  border: 1px solid #459df5;
+  transition: all 1000ms cubic-bezier(0.075, 1, 0.25, 1);
 }
 
 .button:hover svg {
   fill: #fff;
-  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+  transition: all 1000ms cubic-bezier(0.075, 1, 0.25, 1);
 }
 
 .button-theme__theme-choice {
-  background: #FFFFFF;
-  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1),
+    0px 2px 2px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   padding: 1rem;
   text-align: center;
@@ -94,9 +98,9 @@
 }
 
 .button__theme_colored {
-  background-color: #459DF5;
+  background-color: #459df5;
   color: #fff;
-  border: 1px solid #459DF5;
+  border: 1px solid #459df5;
 }
 
 .button__theme_colored svg {
@@ -104,8 +108,9 @@
 }
 
 .theme-choice {
-  background: #FFFFFF;
-  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1),
+    0px 2px 2px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   padding: 1rem;
   text-align: center;
@@ -118,8 +123,9 @@
 }
 
 .delete-choice {
-  background: #FFFFFF;
-  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1),
+    0px 2px 2px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   padding: 1rem;
   text-align: center;
@@ -133,8 +139,9 @@
 }
 
 .page {
-  background: #FFFFFF;
-  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1),
+    0px 2px 2px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   padding: 1rem;
   text-align: center;
@@ -144,52 +151,52 @@
 }
 
 .page__area {
-  border: 1px solid #459DF5;
+  border: 1px solid #459df5;
   width: 8rem;
   height: 2rem;
   display: block;
   text-align: left;
   margin-top: 0.5rem;
-  border: 1px solid #459DF5;
+  border: 1px solid #459df5;
   border-radius: 0.25rem;
-  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+  transition: all 1000ms cubic-bezier(0.075, 1, 0.25, 1);
   padding-left: 0.5rem;
-} 
+}
 
 .page__area {
-  border-color: #BAD8F5;
+  border-color: #bad8f5;
 }
 
 .page__area::-webkit-input-placeholder {
-  color: #BAD8F5;
-} 
-
-.page__area::-webkit-input-placeholder:hover {
-  color: #000;
-} 
-
-.page__area::-moz-placeholder {
-  color: #BAD8F5;
+  color: #bad8f5;
 }
 
 .page__area::-webkit-input-placeholder:hover {
   color: #000;
-} 
+}
+
+.page__area::-moz-placeholder {
+  color: #bad8f5;
+}
+
+.page__area::-webkit-input-placeholder:hover {
+  color: #000;
+}
 
 .page__area:focus-visible {
   outline: none;
-  border: 1px solid #459DF5;
+  border: 1px solid #459df5;
   border-radius: 0.25rem;
-  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+  transition: all 1000ms cubic-bezier(0.075, 1, 0.25, 1);
 }
-
 
 .type {
   margin: 2rem 0rem;
   width: 10rem;
   height: 13rem;
-  background: #FFFFFF;
-  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1),
+    0px 2px 2px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
 }
 
@@ -202,21 +209,21 @@
   display: block;
   width: 1rem;
   height: 1rem;
-  border: 1px solid #BAD8F5;
+  border: 1px solid #bad8f5;
   background-color: #fff;
   border-radius: 0.125rem;
   margin-right: 0.5rem;
-  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+  transition: all 1000ms cubic-bezier(0.075, 1, 0.25, 1);
 }
 
 .checkbox_square:checked {
-  background-color: #459DF5;
-  border: 1px solid #459DF5;
-  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+  background-color: #459df5;
+  border: 1px solid #459df5;
+  transition: all 1000ms cubic-bezier(0.075, 1, 0.25, 1);
 }
 
 .checkbox_square:checked + .checkbox__title {
-  color: #459DF5;
+  color: #459df5;
 }
 
 .type label {
@@ -238,23 +245,27 @@
   font-size: 0.82rem;
 }
 
-.button_long, .button_medium, .button_short {
+.button_long,
+.button_medium,
+.button_short {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+  transition: all 1000ms cubic-bezier(0.075, 1, 0.25, 1);
 }
 
-.button_long svg, .button_medium svg, .button_short svg {
-  fill: #459DF5;
-  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+.button_long svg,
+.button_medium svg,
+.button_short svg {
+  fill: #459df5;
+  transition: all 1000ms cubic-bezier(0.075, 1, 0.25, 1);
 }
 
 .button_long {
   width: 7rem;
   height: 2rem;
   border-radius: 0.25rem;
-  color: #459DF5;
+  color: #459df5;
 }
 
 .button_long svg {
@@ -264,7 +275,7 @@
 .button_medium {
   width: 5.5rem;
   height: 2rem;
-  color: #459DF5;
+  color: #459df5;
   border-radius: 0.25rem;
 }
 
@@ -278,7 +289,7 @@
   width: 5.75rem;
   height: 1.5rem;
   border-radius: 0.25rem;
-  color: #459DF5;
+  color: #459df5;
 }
 
 .buttons_small .button_long svg {
@@ -288,7 +299,7 @@
 .buttons_small .button_medium {
   width: 4.5rem;
   height: 1.5rem;
-  color: #459DF5;
+  color: #459df5;
   border-radius: 0.25rem;
 }
 
@@ -297,16 +308,20 @@
   height: 1.5rem;
 }
 
-.button_long:hover, .button_medium:hover, .button_short:hover {
-  border: 1px solid #459DF5;
-  background: #459DF5;
+.button_long:hover,
+.button_medium:hover,
+.button_short:hover {
+  border: 1px solid #459df5;
+  background: #459df5;
   color: #fff;
-  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+  transition: all 1000ms cubic-bezier(0.075, 1, 0.25, 1);
 }
 
-.button_long:hover svg, .button_medium:hover svg, .button_short:hover svg {
+.button_long:hover svg,
+.button_medium:hover svg,
+.button_short:hover svg {
   fill: #fff;
-  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+  transition: all 1000ms cubic-bezier(0.075, 1, 0.25, 1);
 }
 
 .checkbox_circle {
@@ -314,16 +329,16 @@
   display: block;
   width: 1rem;
   height: 1rem;
-  border: 1px solid #BAD8F5;
+  border: 1px solid #bad8f5;
   background-color: #fff;
   border-radius: 50%;
   margin-right: 0.5rem;
-  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+  transition: all 1000ms cubic-bezier(0.075, 1, 0.25, 1);
 }
 
 .checkbox_circle:checked {
   background-color: #fff;
-  border: 4px solid #459DF5;
+  border: 4px solid #459df5;
   transition: all 0.1s ease;
 }
 
@@ -337,36 +352,36 @@
   display: block;
   width: 16rem;
   height: 2rem;
-  border: 1px solid #459DF5;
+  border: 1px solid #459df5;
   background-color: #fff;
   border-radius: 0.25rem;
   margin-right: 0.5rem;
-  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+  transition: all 1000ms cubic-bezier(0.075, 1, 0.25, 1);
   text-align: left;
   padding-left: 2rem;
 }
 
 .searchbar input::-webkit-input-placeholder {
-  color: #BAD8F5;
-} 
-
-.searchbar input::-webkit-input-placeholder:hover {
-  color: #000;
-} 
-
-.searchbar input::-moz-placeholder {
-  color: #BAD8F5;
+  color: #bad8f5;
 }
 
 .searchbar input::-webkit-input-placeholder:hover {
   color: #000;
-} 
+}
+
+.searchbar input::-moz-placeholder {
+  color: #bad8f5;
+}
+
+.searchbar input::-webkit-input-placeholder:hover {
+  color: #000;
+}
 
 .searchbar input:focus-visible {
   outline: none;
-  border: 1px solid #459DF5;
+  border: 1px solid #459df5;
   border-radius: 0.25rem;
-  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+  transition: all 1000ms cubic-bezier(0.075, 1, 0.25, 1);
 }
 
 .searchbar::before {
@@ -411,60 +426,61 @@
 }
 
 .input__info:disabled {
-  border-color: #BAD8F5;
+  border-color: #bad8f5;
 }
 
 .input__area {
-  border: 1px solid #459DF5;
+  border: 1px solid #459df5;
   width: 16rem;
   height: 2rem;
   display: block;
   text-align: left;
   padding-left: 0.5rem;
   margin-top: 0.5rem;
-  border: 1px solid #459DF5;
+  border: 1px solid #459df5;
   border-radius: 0.25rem;
-  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
-} 
+  transition: all 1000ms cubic-bezier(0.075, 1, 0.25, 1);
+}
 
 .input__area:disabled {
-  border-color: #BAD8F5;
+  border-color: #bad8f5;
 }
 
 .input__area::-webkit-input-placeholder {
-  color: #BAD8F5;
-} 
-
-.input__area::-webkit-input-placeholder:hover {
-  color: #000;
-} 
-
-.input__area::-moz-placeholder {
-  color: #BAD8F5;
+  color: #bad8f5;
 }
 
 .input__area::-webkit-input-placeholder:hover {
   color: #000;
-} 
+}
+
+.input__area::-moz-placeholder {
+  color: #bad8f5;
+}
+
+.input__area::-webkit-input-placeholder:hover {
+  color: #000;
+}
 
 .input__area:focus-visible {
   outline: none;
-  border: 1px solid #459DF5;
+  border: 1px solid #459df5;
   border-radius: 0.25rem;
-  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+  transition: all 1000ms cubic-bezier(0.075, 1, 0.25, 1);
 }
 
-.input__parameters_disabled, .input__area:visited {
-  background: #BAD8F5;
+.input__parameters_disabled,
+.input__area:visited {
+  background: #bad8f5;
 }
 
 .input__parameters_disabled::-webkit-input-placeholder {
   color: #000;
-} 
+}
 
 .input__parameters_disabled::-webkit-input-placeholder:hover {
   color: #000;
-} 
+}
 
 .input__parameters_disabled::-moz-placeholder {
   color: #000;
@@ -472,10 +488,10 @@
 
 .input__parameters_disabled::-webkit-input-placeholder:hover {
   color: #000;
-} 
+}
 
 .input__parameters_disabled:focus-visible {
-  border-color: #459DF5;
+  border-color: #459df5;
 }
 
 .input__parameters_closing::after {
@@ -487,11 +503,11 @@
 }
 
 .input__parameters_locked::after {
-    content: url(../images/svg/locked.svg);
-    position: absolute;
-    left: 90%;
-    top: 49%;
-    cursor: pointer;
+  content: url(../images/svg/locked.svg);
+  position: absolute;
+  left: 90%;
+  top: 49%;
+  cursor: pointer;
 }
 
 .button_black {
@@ -506,20 +522,22 @@
 
 .button_black svg {
   fill: #000;
-  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+  transition: all 1000ms cubic-bezier(0.075, 1, 0.25, 1);
 }
 
 .button_colored {
-  border: 1px solid #459DF5;
-  background: #459DF5;
+  border: 1px solid #459df5;
+  background: #459df5;
   color: #fff !important;
-  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+  transition: all 1000ms cubic-bezier(0.075, 1, 0.25, 1);
   margin-bottom: 1rem;
 }
 
-.button_colored svg, .button_colored svg, .button_colored svg {
+.button_colored svg,
+.button_colored svg,
+.button_colored svg {
   fill: #fff;
-  transition: all 1000ms cubic-bezier(0.075, 1.000, 0.250, 1.000);
+  transition: all 1000ms cubic-bezier(0.075, 1, 0.25, 1);
 }
 
 .dropdowns__radio {
@@ -527,7 +545,7 @@
 }
 
 .dropdowns__radio:checked + .dropdowns__radio-title {
-  color: #459DF5;
+  color: #459df5;
 }
 
 .dropdowns__radio-title {
@@ -535,7 +553,7 @@
 }
 
 .checkbox-example {
-  margin: 5rem 0; 
+  margin: 5rem 0;
 }
 
 .checkbox-example__item:first-child {
